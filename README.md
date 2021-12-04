@@ -1,5 +1,9 @@
 # Tas-Kagit-Makas as a NEAR contract
 
+Video demo: [here](https://drive.google.com/file/d/1L0licLk5sSTQ21iwIp3QHHPRhX8hhfC3/view)
+
+Figma wireframes: [here](https://www.figma.com/file/reMNlA1lKaM1hFthWbwvrP/Untitled?node-id=3%3A117)
+
 ## Install dependencies
 ```
 yarn
