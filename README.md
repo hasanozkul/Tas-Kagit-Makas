@@ -1,4 +1,4 @@
-# Tas-Kagit-Makas as a NEAR contract
+# Tas-Kagit-Makas (Rock-Paper-Scissors) as a NEAR contract
 
 
 ## Install dependencies
