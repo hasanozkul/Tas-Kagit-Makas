@@ -16,13 +16,17 @@ export function play(gameId: u32, selectedItem: string): string {
   let message = "";
   if (game.lastChoosedItem == "") 
   {
+      game.player1 = context.sender;
       game.lastChoosedItem = selectedItem;
       game.gameState = GameState.InProgress;
-      message = "Player1 played"
+      message = 'Player1 played';
   }
   else
   {
       assert(game.gameState == GameState.InProgress, 'Game is not in progress');
+      assert(game.player1 != context.sender,'Same Player.It is not your turn');
+      game.player2 = context.sender;
+    
       if(game.lastChoosedItem == "Tas" && selectedItem =="Kagit")
          message=finishGame(game,game.player2);
       else if(game.lastChoosedItem == "Tas"  && selectedItem =="Makas")
